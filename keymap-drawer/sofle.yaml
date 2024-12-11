@@ -71,7 +71,7 @@ layers:
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
   - '&K_PP'
-  - '&K_STOP2'
+  - '&K_STOP'
   - '&K_PREV'
   - '&K_NEXT'
   - {t: ▽, type: trans}
