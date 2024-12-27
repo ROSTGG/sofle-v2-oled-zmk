@@ -17,7 +17,7 @@
 #define ADJUST 3
 #define colemak 4
 
-#include "combos.dtsi"  // must be sources after HRM-combo hack
+// #include "combos.dtsi"  // must be sources after HRM-combo hack
 #include "leader.dtsi"
 #include "mouse.dtsi"
 #include "extra_keys.h"
