@@ -232,8 +232,8 @@ layers:
   - ''
   - K
   - H
-  - {t: ',', s: comma inner morph}
-  - {t: ., s: dot inner morph}
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
   - {t: '?', s: '!'}
   - RSHFT
   - LGUI
