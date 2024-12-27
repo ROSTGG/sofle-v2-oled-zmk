@@ -156,8 +156,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - {t: colemak, h: toggle}
+  - {t: default, h: toggle}
   - ''
   - ''
   - ''
