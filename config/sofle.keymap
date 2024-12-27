@@ -18,7 +18,7 @@
 #define colemak 4
 
 
-{
+/ {
     behaviors {
         comma_morph: comma_morph {
             compatible = "zmk,behavior-mod-morph";
