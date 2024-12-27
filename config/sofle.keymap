@@ -17,26 +17,13 @@
 #define ADJUST 3
 #define colemak 4
 
-
 / {
     behaviors {
-        comma_morph: comma_morph {
+        gresc: grave_escape {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&comma_inner_morph>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        dot_morph: dot_morph {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp DOT>, <&dot_inner_morph>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        qexcl: qexcl {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp QMARK>, <&kp EXCL>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp ESC>, <&kp GRAVE>;
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
     };
 };
@@ -156,28 +143,7 @@
                                     &none            &none            &none            &none            &none              &none  &none           &none  &none  &none
             >;
         };
-colemak_layer {
-            label = "colemak";
 
-            // ------------------------------------------------------------------------------------------------------------
-            // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |       |
-            // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   | BKSPC |
-            // |  ESC  |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
-            // | SHIFT |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  |       |  N   |  M    |  ,    |  .   |   /   | SHIFT |
-            //               | GUI | ALT  | CTRL | LOWER|  SPACE |  | ENTER | RAISE| CTRL  | ALT   | GUI  |
-
-            bindings = <
-&kp GRAVE  &kp N1  &kp N2    &kp N3   &kp N4     &kp N5                         &kp N6  &kp N7         &kp N8     &kp N9    &kp N0    &kp EQUAL
-&kp TAB    &kp Q   &kp W     &kp F    &kp P      &kp B                          &kp J   &kp L          &kp U      &kp Y     &kp SQT   &kp LEFT_BRACKET
-&kp ESC    &kp A   &kp R     &kp S    &kp T      &kp G                          &kp M   &kp N          &kp E      &kp I     &kp O     &kp RIGHT_BRACKET
-&kp LSHFT  &kp Z   &kp X     &kp C    &kp D      &kp V   &kp C_MUTE    &none    &kp K   &kp H          &comma_morph  &dot_morph   &qexcl  &kp RSHFT
-                   &kp LGUI  &kp DEL  &kp LCTRL  &mo 1   &kp SPACE     &kp RET  &mo 2   &kp BACKSPACE  &kp RALT   &kp RGUI
-            >;
-
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
-                <&inc_dec_kp PG_UP PG_DN>;
-        };
 
     };
 };
