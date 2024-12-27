@@ -131,5 +131,28 @@
                                     &none            &none            &none            &none            &none              &none  &none           &none  &none  &none
             >;
         };
+colemak_layer {
+            label = "colemak";
+
+            // ------------------------------------------------------------------------------------------------------------
+            // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |       |
+            // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   | BKSPC |
+            // |  ESC  |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
+            // | SHIFT |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  |       |  N   |  M    |  ,    |  .   |   /   | SHIFT |
+            //               | GUI | ALT  | CTRL | LOWER|  SPACE |  | ENTER | RAISE| CTRL  | ALT   | GUI  |
+
+            bindings = <
+&kp GRAVE  &kp N1  &kp N2    &kp N3   &kp N4     &kp N5                         &kp N6  &kp N7         &kp N8     &kp N9    &kp N0    &kp EQUAL
+&kp TAB    &kp Q   &kp W     &kp E    &kp R      &kp T                          &kp Y   &kp U          &kp I      &kp O     &kp P     &kp LEFT_BRACKET
+&kp ESC    &kp A   &kp S     &kp D    &kp F      &kp G                          &kp H   &kp J          &kp K      &kp L     &kp SEMI  &kp RIGHT_BRACKET
+&kp LSHFT  &kp Z   &kp X     &kp C    &kp V      &kp B   &kp C_MUTE    &none    &kp N   &kp M          &kp COMMA  &kp DOT   &kp FSLH  &kp SQT
+                   &kp LGUI  &kp DEL  &kp LCTRL  &mo 1   &kp SPACE     &kp RET  &mo 2   &kp BACKSPACE  &kp RALT   &kp RGUI
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp PG_UP PG_DN>;
+        };
+
     };
 };
