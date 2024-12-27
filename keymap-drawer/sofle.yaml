@@ -235,7 +235,7 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
-  - RSHFT
+  - {t: default, h: toggle}
   - LGUI
   - DEL
   - LCTRL
