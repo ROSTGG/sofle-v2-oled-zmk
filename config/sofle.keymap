@@ -16,11 +16,6 @@
 #define RAISE 2
 #define ADJUST 3
 
-// tap: sticky-shift | shift + tap/ double-tap: caps-word | hold: shift
-ZMK_MOD_MORPH(smart_shft,
-    bindings = <&sk LSHFT>, <&caps_word>;
-    mods = <(MOD_LSFT)>;
-)
 
 // reuse basic mod-morph scheme
 #define SIMPLE_MORPH(NAME, MOD, BINDING1, BINDING2) \
