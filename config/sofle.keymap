@@ -20,10 +20,7 @@
 #define RAISE 2
 #define ADJUST 3
 
-#include "combos.dtsi"  // must be sources after HRM-combo hack
-#include "leader.dtsi"
-#include "mouse.dtsi"
-#include "extra_keys.h"
+
 
 // reuse basic mod-morph scheme
 #define SIMPLE_MORPH(NAME, MOD, BINDING1, BINDING2) \
