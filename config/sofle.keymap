@@ -15,6 +15,7 @@
 #define LOWER 1
 #define RAISE 2
 #define ADJUST 3
+#define colemak 4
 
 #include "combos.dtsi"  // must be sources after HRM-combo hack
 #include "leader.dtsi"
