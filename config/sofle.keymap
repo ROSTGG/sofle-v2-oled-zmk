@@ -27,6 +27,24 @@
         };
     };
 
+    macros {
+        rgblayer: rgb_layer {
+            compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>;
+            bindings =
+                <&macro_param_2to2 &rgb_ug RGB_COLOR_HSB_CMD MACRO_PLACEHOLDER &macro_param_1to1>,
+                <&macro_press>,
+                <&mo MACRO_PLACEHOLDER>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&macro_param_1to1 &mo MACRO_PLACEHOLDER>,
+                <&macro_tap>,
+                <&rgb_ug RGB_TOG>;
+
+            label = "MOMENTARY_LAYER_WITH_RGB_SELECTION";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -41,11 +59,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  SPACE |  | ENTER | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE  &kp N1  &kp N2    &kp N3   &kp N4     &kp N5                            &kp N6     &kp N7         &kp N8     &kp N9    &kp N0    &kp EQUAL
-&kp TAB    &kp Q   &kp W     &kp E    &kp R      &kp T                             &kp Y      &kp U          &kp I      &kp O     &kp P     &kp LEFT_BRACKET
-&kp ESC    &kp A   &kp S     &kp D    &kp F      &kp G                             &kp H      &kp J          &kp K      &kp L     &kp SEMI  &kp RIGHT_BRACKET
-&kp LSHFT  &kp Z   &kp X     &kp C    &kp V      &kp B      &kp C_MUTE    &none    &kp N      &kp M          &kp COMMA  &kp DOT   &kp FSLH  &kp SQT
-                   &kp LGUI  &kp DEL  &kp LCTRL  &mo LOWER  &kp SPACE     &kp RET  &mo RAISE  &kp BACKSPACE  &kp RALT   &kp RGUI
+&kp GRAVE  &kp N1  &kp N2    &kp N3   &kp N4     &kp N5                                                           &kp N6                                    &kp N7         &kp N8     &kp N9    &kp N0    &kp EQUAL
+&kp TAB    &kp Q   &kp W     &kp E    &kp R      &kp T                                                            &kp Y                                     &kp U          &kp I      &kp O     &kp P     &kp LEFT_BRACKET
+&kp ESC    &kp A   &kp S     &kp D    &kp F      &kp G                                                            &kp H                                     &kp J          &kp K      &kp L     &kp SEMI  &kp RIGHT_BRACKET
+&kp LSHFT  &kp Z   &kp X     &kp C    &kp V      &kp B                                     &kp C_MUTE    &none    &kp N                                     &kp M          &kp COMMA  &kp DOT   &kp FSLH  &kp SQT
+                   &kp LGUI  &kp DEL  &kp LCTRL  &rgblayer RGB_COLOR_HSB_VAL(164,53,47) 1  &kp SPACE     &kp RET  &rgblayer RGB_COLOR_HSB_VAL(200,52,47) 2  &kp BACKSPACE  &kp RALT   &kp RGUI
             >;
 
             sensor-bindings =
