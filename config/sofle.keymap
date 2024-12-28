@@ -15,6 +15,7 @@
 #define RAISE 2
 #define ADJUST 3
 #define colemak 4
+#define GAME 5
 
 / {
     behaviors {
