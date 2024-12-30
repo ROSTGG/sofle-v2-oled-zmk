@@ -324,7 +324,7 @@ layers:
   - Q
   - W
   - '&mmv MOVE_UP'
-  - '&mmv MOVE_Y 100'
+  - '&msc SCRL_UP'
   - T
   - Y
   - U
@@ -348,7 +348,7 @@ layers:
   - Z
   - X
   - ''
-  - '&mmv MOVE_Y -100'
+  - '&msc SCRL_DOWN'
   - B
   - MUTE
   - ''
