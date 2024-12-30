@@ -307,3 +307,64 @@ layers:
   - BACKSPACE
   - RALT
   - RGUI
+  MouseKeys:
+  - ESC
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '='
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '['
+  - LSHFT
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ']'
+  - LCTRL
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - MUTE
+  - ''
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {t: default, h: toggle}
+  - LGUI
+  - DEL
+  - LCTRL
+  - SPACE
+  - SPACE
+  - RET
+  - raise
+  - BACKSPACE
+  - RALT
+  - RGUI
