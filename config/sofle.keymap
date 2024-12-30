@@ -199,5 +199,21 @@
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>,
                 <&inc_dec_kp PG_UP PG_DN>;
         };
+        MouseKeys_layer {
+            label = "MouseKeys";
+            bindings = <
+&kp ESC    &kp N1  &kp N2    &kp N3   &kp N4     &kp N5                            &kp N6  &kp N7         &kp N8     &kp N9    &kp N0    &kp EQUAL
+&kp TAB    &kp Q   &kp W     &kp E    &kp R      &kp T                             &kp Y   &kp U          &kp I      &kp O     &kp P     &kp LEFT_BRACKET
+&kp LSHFT  &kp A   &kp S     &kp D    &kp F      &kp G                             &kp H   &kp J          &kp K      &kp L     &kp SEMI  &kp RIGHT_BRACKET
+&kp LCTRL  &kp Z   &kp X     &kp C    &kp V      &kp B      &kp C_MUTE    &none    &kp N   &kp M          &kp COMMA  &kp DOT   &kp FSLH  &to 0
+                   &kp LGUI  &kp DEL  &kp LCTRL  &kp SPACE  &kp SPACE     &kp RET  &mo 2   &kp BACKSPACE  &kp RALT   &kp RGUI
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp PG_UP PG_DN>;
+        };
+
+
     };
 };
