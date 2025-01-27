@@ -127,13 +127,24 @@
 
         raise_layer {
             label = "raise";
+
+            // ------------------------------------------------------------------------------------------------------------
+            // | BTCLR | BT1  | BT2  |  BT3  |  BT4  |  BT5 |                | PAUSE| STOP | PREV  | NEXT |       |       |
+            // |       | INS  | PSCR | GUI   |       |      |                | PGUP | HOME |   ^   |      |  END  |       |
+            // |       | ALT  | CTRL | SHIFT |       | CAPS |                | PGDN |   <- |   v   |  ->  |  DEL  | BKSPC |
+            // |       | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |      |       |      |       |       |
+            //                |      |       |       |      |      |  |      |      |      |       |      |
+
             bindings = <
-&kp ESC    &kp N1  &kp N2          &kp N3          &kp N4            &kp N5                                  &kp N6  &kp N7         &kp N8     &kp N9    &kp N0    &kp EQUAL
-&kp TAB    &kp Q   &kp W           &mmv MOVE_UP    &msc SCRL_UP   &kp T                                   &kp Y   &kp U          &kp I      &kp O     &kp P     &kp LEFT_BRACKET
-&kp LSHFT  &kp A   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &mmv MOVE_RIGHT                         &kp H   &kp J          &kp K      &kp L     &kp SEMI  &kp RIGHT_BRACKET
-&kp LCTRL  &kp Z   &kp X           &none           &msc SCRL_DOWN  &kp B            &kp C_MUTE    &none    &kp N   &kp M          &kp COMMA  &kp DOT   &kp FSLH  &to 0
-                   &kp LGUI        &kp DEL         &mkp MCLK         &mkp LCLK        &mkp RCLK     &kp RET  &mo 2   &kp BACKSPACE  &kp RALT   &kp RGUI
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &kp K_PP   &kp K_STOP  &kp K_PREV  &kp K_NEXT  &trans         &trans
+&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &trans                          &kp PG_UP  &kp HOME    &kp UP      &kp END     &kp BACKSPACE  &kp DELETE
+&trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK                        &kp PG_DN  &kp LEFT    &kp DOWN    &kp RIGHT   &kp BACKSPACE  &kp DELETE
+&trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &trans    &trans  &trans     &trans      &trans      &trans      &trans         &trans
+                          &trans        &trans        &trans        &trans        &trans    &trans  &trans     &trans      &trans      &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
+        };
 
         adjust_layer {
             // ----------------------------------------------------------------------------------------------------------------------------
