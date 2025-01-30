@@ -74,12 +74,12 @@ layers:
   - STOP
   - PREV
   - NEXT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - INS
   - PSCRN
-  - CMENU
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PG UP
@@ -89,11 +89,11 @@ layers:
   - BACKSPACE
   - DELETE
   - {t: ▽, type: trans}
-  - LALT
-  - LCTRL
-  - LSHFT
   - {t: ▽, type: trans}
-  - CLCK
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - PG DN
   - LEFT
   - DOWN
@@ -112,7 +112,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - CMENU
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -310,7 +310,7 @@ layers:
   MouseKeys:
   - ESC
   - '1'
-  - '2'
+  - {t: ▽, type: trans}
   - '3'
   - '4'
   - '5'
@@ -321,11 +321,11 @@ layers:
   - '0'
   - '='
   - TAB
-  - Q
-  - W
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '&mmv MOVE_UP'
   - '&msc SCRL_UP'
-  - T
+  - {t: ▽, type: trans}
   - Y
   - U
   - I
@@ -333,11 +333,11 @@ layers:
   - P
   - '['
   - LSHFT
-  - A
+  - {t: ▽, type: trans}
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_RIGHT'
-  - '&mmv MOVE_RIGHT'
+  - {t: ▽, type: trans}
   - H
   - J
   - K
@@ -345,11 +345,11 @@ layers:
   - ;
   - ']'
   - LCTRL
-  - Z
-  - X
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '&msc SCRL_DOWN'
-  - B
+  - {t: ▽, type: trans}
   - MUTE
   - ''
   - N
@@ -358,8 +358,8 @@ layers:
   - .
   - /
   - {t: default, h: toggle}
-  - LGUI
-  - DEL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '&mkp MCLK'
   - '&mkp LCLK'
   - '&mkp RCLK'
