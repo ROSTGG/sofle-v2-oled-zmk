@@ -152,8 +152,8 @@ layers:
   - ''
   - RGB BRD
   - RGB BRI
-  - ''
-  - ''
+  - OUT USB
+  - OUT BLE
   - ''
   - {t: gameing, h: toggle}
   - {t: colemak, h: toggle}
