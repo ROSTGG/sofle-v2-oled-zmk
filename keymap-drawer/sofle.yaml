@@ -104,8 +104,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - '&msc SCRL_DOWN'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -117,9 +117,9 @@ layers:
   - {t: ▽, type: trans}
   - '&mkp LCLK'
   - '&mkp MCLK'
+  - {t: ▽, type: trans}
   - '&mkp LCLK'
   - '&mkp RCLK'
-  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
