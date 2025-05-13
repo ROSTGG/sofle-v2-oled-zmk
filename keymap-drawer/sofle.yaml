@@ -1,9 +1,9 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '=', TAB, Q, W, E, R, T, Y, U, I, O, P, '[', ESC, A, S, D, F, G, H, J, K, L, ;, ']', LSHFT, Z,
-    X, C, V, B, MUTE, '', N, M, ',', ., /, '''', LGUI, LALT, LCTRL, lower, SPACE, RET, raise, BACKSPACE, DEL, RGUI]
+  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DELETE, ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT,
+    Z, X, C, V, B, MUTE, '', N, M, ',', ., /, RSHFT, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, RGUI]
   lower:
-  - {t: ▽, type: trans}
+  - '&studio_unlock'
   - F1
   - F2
   - F3
@@ -15,7 +15,7 @@ layers:
   - F9
   - F10
   - F11
-  - Ctl+~
+  - '`'
   - '1'
   - '2'
   - '3'
@@ -45,15 +45,15 @@ layers:
   - KP PLUS
   - '{'
   - '}'
-  - MUTE
-  - PP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '['
   - ']'
   - ;
   - ':'
   - \
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&studio_unlock'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -70,36 +70,41 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - PP
-  - STOP
-  - PREV
-  - NEXT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - INS
   - PSCRN
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - CMENU
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PG UP
-  - HOME
+  - {t: ▽, type: trans}
   - UP
-  - END
-  - BACKSPACE
-  - DELETE
+  - {t: ▽, type: trans}
+  - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - LALT
+  - LCTRL
+  - LSHFT
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - CLCK
   - PG DN
   - LEFT
   - DOWN
   - RIGHT
-  - BACKSPACE
-  - DELETE
+  - DEL
+  - BSPC
+  - {t: ▽, type: trans}
+  - UNDO
+  - CUT
+  - COPY
+  - PASTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -108,11 +113,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - CMENU
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -131,7 +131,7 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - '&studio_unlock'
+  - ''
   - ''
   - ''
   - ''
@@ -152,13 +152,13 @@ layers:
   - ''
   - RGB BRD
   - RGB BRI
-  - OUT USB
-  - OUT BLE
   - ''
   - ''
   - ''
-  - {t: default, h: toggle}
-  - {t: MouseKeys, h: toggle}
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -185,186 +185,3 @@ layers:
   - ''
   - ''
   - ''
-  colemak:
-  - '`'
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - '='
-  - TAB
-  - Q
-  - W
-  - F
-  - P
-  - B
-  - J
-  - L
-  - U
-  - Y
-  - ''''
-  - '['
-  - ESC
-  - A
-  - R
-  - S
-  - T
-  - G
-  - M
-  - N
-  - E
-  - I
-  - O
-  - ']'
-  - LSHFT
-  - Z
-  - X
-  - C
-  - D
-  - V
-  - MUTE
-  - ''
-  - K
-  - H
-  - {t: ',', s: ;}
-  - {t: ., s: ':'}
-  - {t: '?', s: '!'}
-  - {t: default, h: toggle}
-  - LGUI
-  - DEL
-  - LCTRL
-  - lower
-  - SPACE
-  - RET
-  - raise
-  - BACKSPACE
-  - RALT
-  - RGUI
-  gameing:
-  - ESC
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - '='
-  - TAB
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - '['
-  - LSHFT
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - ']'
-  - LCTRL
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - MUTE
-  - ''
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - {t: default, h: toggle}
-  - LGUI
-  - DEL
-  - LCTRL
-  - SPACE
-  - SPACE
-  - RET
-  - raise
-  - BACKSPACE
-  - RALT
-  - RGUI
-  MouseKeys:
-  - ESC
-  - '1'
-  - {t: ▽, type: trans}
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - '='
-  - TAB
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mmv MOVE_UP'
-  - '&msc SCRL_UP'
-  - {t: ▽, type: trans}
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - '['
-  - LSHFT
-  - {t: ▽, type: trans}
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_RIGHT'
-  - {t: ▽, type: trans}
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - ']'
-  - LCTRL
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&msc SCRL_DOWN'
-  - {t: ▽, type: trans}
-  - MUTE
-  - ''
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - {t: default, h: toggle}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mkp MCLK'
-  - '&mkp LCLK'
-  - '&mkp RCLK'
-  - RET
-  - raise
-  - BACKSPACE
-  - RALT
-  - RGUI
