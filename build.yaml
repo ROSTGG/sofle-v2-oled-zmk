@@ -13,11 +13,11 @@
 #
 ---
 include:
-  - board: nRF52840-nicenano
+  - board: promicro_nrf52840
     shield: sofle_left
 #    snippet: studio-rpc-usb-uart
 #    cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: nRF52840-nicenano
+  - board: promicro_nrf52840
     shield: sofle_right
-  - board: nRF52840-nicenano
+  - board: promicro_nrf52840
     shield: settings_reset
