@@ -7,9 +7,9 @@ manifest:
       remote: zmkfirmware
       revision: v0.3
       import: app/west.yml
-    # dongle_display
-    - name: zmk-dongle-display
-      remote: englmaxi
+    # nice_oled - nice_epaper
+    - name: zmk-nice-oled
+      remote: mctechnology17
       revision: main
   self:
     path: config
