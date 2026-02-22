@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DELETE, ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT,
-    Z, X, C, V, B, MUTE, '', N, M, ',', ., /, RSHFT, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, RGUI]
+  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '=', TAB, Q, W, E, R, T, Y, U, I, O, P, '[', ESC, A, S, D, F, G, H, J, K, L, ;, ']', LSHFT, Z,
+    X, C, V, B, MUTE, '', N, M, ',', ., /, '''', LGUI, LALT, LCTRL, lower, SPACE, RET, raise, BACKSPACE, DEL, RGUI]
   lower:
   - '&studio_unlock'
   - F1
@@ -70,41 +70,36 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - PP
+  - STOP
+  - PREV
+  - NEXT
   - INS
   - PSCRN
-  - CMENU
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PG UP
-  - {t: ▽, type: trans}
+  - HOME
   - UP
+  - END
+  - BACKSPACE
+  - DELETE
   - {t: ▽, type: trans}
-  - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LALT
-  - LCTRL
-  - LSHFT
   - {t: ▽, type: trans}
-  - CLCK
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - PG DN
   - LEFT
   - DOWN
   - RIGHT
-  - DEL
-  - BSPC
-  - {t: ▽, type: trans}
-  - UNDO
-  - CUT
-  - COPY
-  - PASTE
+  - BACKSPACE
+  - DELETE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -114,6 +109,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - CMENU
+  - DELETE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
